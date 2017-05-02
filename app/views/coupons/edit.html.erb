@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h3> Edit Coupon </h3>
+
+    <%= form_tag coupon_path(@coupon), method: :patch do %>
+      <label>Coupon Code</label><br>
+      <%= text_field_tag :coupon_code, @coupon.coupon_code %><br>
+
+      <label>Store</label><br>
+      <%= text_field_tag :store, @coupon.store %><br>
+      <br>
+      <%= submit_tag "Edit Coupon" %>
+    <% end %>
+
+
+  </body>
+</html>

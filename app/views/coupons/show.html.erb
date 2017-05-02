@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1> Coupon </h1>
+    <h1> Coupon Code: <%= @coupon.coupon_code %> </h1>
+    <h1> Store: <%= @coupon.store %> <h1>
+    <br>
+    <br>
+    <div> <%= link_to("Back to all Coupons", coupons_path)%></div>
+    <br>
+    <div> <%= link_to("Edit Coupon", edit_coupon_path(@coupon)) %></div>
+
+  </body>
+</html>
